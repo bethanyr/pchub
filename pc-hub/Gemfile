@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -28,6 +28,7 @@ gem 'thredded', '~> 0.6.1'
 
 #Gem for bootstrap view
 gem 'twitter-bootstrap-rails'
+gem "less-rails"
 
 gem 'bootstrap_form'
 

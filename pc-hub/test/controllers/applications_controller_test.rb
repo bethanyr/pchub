@@ -18,7 +18,7 @@ class ApplicationsControllerTest < ActionController::TestCase
 
   test "should create application" do
     assert_difference('Application.count') do
-      post :create, application: { description: @application.description, name: @application.name, operating_system: @application.operating_system }
+      post :create, application: { description: @application.description, name: @application.name, platform: @application.platform }
     end
 
     assert_redirected_to application_path(assigns(:application))
@@ -35,7 +35,7 @@ class ApplicationsControllerTest < ActionController::TestCase
   end
 
   test "should update application" do
-    patch :update, id: @application, application: { description: @application.description, name: @application.name, operating_system: @application.operating_system }
+    patch :update, id: @application, application: { description: @application.description, name: @application.name, platform: @application.platform }
     assert_redirected_to application_path(assigns(:application))
   end
 
