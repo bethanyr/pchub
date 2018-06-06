@@ -1,0 +1,5 @@
+language: ruby
+script:
+  - cd pc-hub
+  - bundle install
+  - rake test
